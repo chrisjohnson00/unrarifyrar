@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.2](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.2) (2022-04-30)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.1...v1.0.2)
+
+**Merged pull requests:**
+
+- ci: fix release docker build [\#9](https://github.com/chrisjohnson00/unrarifyrar/pull/9) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.0.1](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.1) (2022-04-30)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.0...v1.0.1)
