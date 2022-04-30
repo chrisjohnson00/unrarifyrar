@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.4](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.4) (2022-04-30)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.3...v1.0.4)
+
+**Merged pull requests:**
+
+- ci: re-enable pr label tagging [\#11](https://github.com/chrisjohnson00/unrarifyrar/pull/11) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.0.3](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.3) (2022-04-30)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.2...v1.0.3)
