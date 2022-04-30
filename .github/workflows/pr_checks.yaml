@@ -29,15 +29,14 @@ jobs:
         run: |
           echo "module.exports = {extends: ['@commitlint/config-conventional'], rules: { 'subject-case': [2, 'always', ['sentence-case','lower-case', 'start-case']], 'header-max-length': [2, 'always', 120], 'body-max-line-length': [0, 'always', 120] }};" > commitlint.config.js
       - uses: 'wagoid/commitlint-github-action@v4.1.11'
-# getting Error: Resource not accessible by integration with the below job
-#  apply-labels:
-#    name: 'PR Labels'
-#    runs-on: 'ubuntu-18.04'
-#    steps:
-#      - uses: 'actions/checkout@v3'
-#      - name: 'Apply Herald rules'
-#        uses: 'gagoar/use-herald-action@v2.3.0'
-#        with:
-#          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-#          rulesLocation: '.github/herald_rule_*.json'
-#          base: 'main'
+  apply-labels:
+    name: 'PR Labels'
+    runs-on: 'ubuntu-18.04'
+    steps:
+      - uses: 'actions/checkout@v3'
+      - name: 'Apply Herald rules'
+        uses: 'gagoar/use-herald-action@v2.3.0'
+        with:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          rulesLocation: '.github/herald_rule_*.json'
+          base: 'main'
