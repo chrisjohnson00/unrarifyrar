@@ -14,7 +14,6 @@ def main():
     logger.info("Starting")
     sonarr_host = get_config('SONAR_HOST')
     sonarr_apikey = get_config('SONAR_APIKEY')
-    torrent_path = '/torrents/'
     response = get_request(f'{sonarr_host}/api/queue?apikey={sonarr_apikey}')
     response_json = response.json()
     for item in response_json:
@@ -22,14 +21,17 @@ def main():
         for status in status_messages:
             for message in status['messages']:
                 if "No files found are eligible for import" in message:
-                    path = f"{torrent_path}{item['title']}/"
-                    glob_search = f"{path}*.rar"
-                    rar_files = glob.glob(glob_search, recursive=True)
-                    unrar_files(rar_files, path)
+                    unrar_files(item)
+            if "One or more episodes expected in this release were not imported or missing" in status['title']:
+                unrar_files(item)
     logger.info("Done")
 
 
-def unrar_files(rar_files, extract_path):
+def unrar_files(item):
+    torrent_path = '/torrents/'
+    extract_path = f"{torrent_path}{item['title']}/"
+    glob_search = f"{extract_path}*.rar"
+    rar_files = glob.glob(glob_search, recursive=True)
     for path in rar_files:
         logger.info(f'Unraring {path}')
         command = ['unrar', 'e', '-o-', path, extract_path]
