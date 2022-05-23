@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.5](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.5) (2022-05-23)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.4...v1.0.5)
+
+**Fixed bugs:**
+
+- fix: additional messages to match on [\#19](https://github.com/chrisjohnson00/unrarifyrar/pull/19) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.0.4](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.4) (2022-04-30)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.3...v1.0.4)
