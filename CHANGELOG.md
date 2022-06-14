@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.1.0](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.0) (2022-06-14)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.5...v1.1.0)
+
+**Implemented enhancements:**
+
+- feat: including radarr [\#23](https://github.com/chrisjohnson00/unrarifyrar/pull/23) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.0.5](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.0.5) (2022-05-23)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.4...v1.0.5)
