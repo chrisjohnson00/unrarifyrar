@@ -61,7 +61,9 @@ def unrar_files(item):
     for path in rar_files:
         logger.info(f'Unraring {path}')
         command = ['unrar', 'e', path, temp_dir]
+        logger.info(f'Unrar {path} to {temp_dir}')
         subprocess.run(command, check=True)
+        logger.info(f'Moving {temp_dir} to {extract_path}')
         shutil.move(temp_dir, extract_path)
 
 
