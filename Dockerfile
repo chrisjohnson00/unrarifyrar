@@ -1,9 +1,9 @@
-FROM ubuntu:22.04
+FROM ubuntu:22.10
 
 WORKDIR /usr/src/app
 
 RUN apt update && \
-    apt install -y unrar nano python3 pip && \
+    apt install -y unrar python3 pip && \
     rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
