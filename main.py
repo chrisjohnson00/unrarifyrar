@@ -3,6 +3,8 @@ import glob
 import os
 import pygogo as gogo
 import subprocess
+import tempfile
+import shutil
 
 # logging setup
 kwargs = {}
@@ -53,12 +55,23 @@ def check_radarr_queue_for_unrar(apikey, host):
 def unrar_files(item):
     torrent_path = '/torrents/'
     extract_path = f"{torrent_path}{item['title']}/"
+    temp_dir = tempfile.mkdtemp()
     glob_search = f"{extract_path}*.rar"
     rar_files = glob.glob(glob_search, recursive=True)
     for path in rar_files:
         logger.info(f'Unraring {path}')
-        command = ['unrar', 'e', '-o-', path, extract_path]
+        command = ['unrar', 'e', path, temp_dir]
+        logger.info(f'Unrar {path} to {temp_dir}')
         subprocess.run(command, check=True)
+        move_from_temp_dir(temp_dir, extract_path)
+
+
+def move_from_temp_dir(source_dir, dest_dir):
+    for file_name in os.listdir(source_dir):
+        file_path = os.path.join(source_dir, file_name)
+        if os.path.isfile(file_path):
+            logger.info(f'Moving {file_path} to {dest_dir}')
+            shutil.move(file_path, dest_dir)
 
 
 def get_request(url, headers={}):
