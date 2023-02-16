@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.1.1](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.1) (2023-02-16)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.0...v1.1.1)
+
+**Fixed bugs:**
+
+- fix: use a temporary path while extracting issue-68 [\#69](https://github.com/chrisjohnson00/unrarifyrar/pull/69) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.1.0](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.0) (2022-06-14)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.0.5...v1.1.0)
