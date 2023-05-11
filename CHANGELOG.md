@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.1.3](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.3) (2023-05-11)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.2...v1.1.3)
+
+**Merged pull requests:**
+
+- ci: container release workflow to run on ubuntu 22.04 [\#89](https://github.com/chrisjohnson00/unrarifyrar/pull/89) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.1.2](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.2) (2023-05-11)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.1...v1.1.2)
