@@ -48,7 +48,8 @@ def check_radarr_queue_for_unrar(apikey, host):
             for message in status['messages']:
                 if "No files found are eligible for import" in message or "Sample" in message:
                     unrar_files(item)
-            if "One or more episodes expected in this release were not imported or missing" in status['title']:
+            if ("One or more episodes expected in this release were not imported or missing" in status['title']
+                    or "Found archive file" in status['title']):
                 unrar_files(item)
 
 
