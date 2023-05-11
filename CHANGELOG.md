@@ -1,5 +1,21 @@
 # Changelog
 
+## [v1.1.2](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.2) (2023-05-11)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.1...v1.1.2)
+
+**Fixed bugs:**
+
+- fix: adding new message for when archive files are found [\#87](https://github.com/chrisjohnson00/unrarifyrar/pull/87) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
+**Closed issues:**
+
+- slow unrars can cause truncated files when Radarr/Sonarr copies them [\#68](https://github.com/chrisjohnson00/unrarifyrar/issues/68)
+
+**Merged pull requests:**
+
+- ci: auto release should run on ubuntu 22.04 [\#88](https://github.com/chrisjohnson00/unrarifyrar/pull/88) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.1.1](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.1) (2023-02-16)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.0...v1.1.1)
