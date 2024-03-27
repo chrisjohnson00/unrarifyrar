@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.2.0](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.2.0) (2024-03-27)
+
+[Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.3...v1.2.0)
+
+**Implemented enhancements:**
+
+- feat: support for sonarr 4 apis [\#96](https://github.com/chrisjohnson00/unrarifyrar/pull/96) ([chrisjohnson00](https://github.com/chrisjohnson00))
+
 ## [v1.1.3](https://github.com/chrisjohnson00/unrarifyrar/tree/v1.1.3) (2023-05-11)
 
 [Full Changelog](https://github.com/chrisjohnson00/unrarifyrar/compare/v1.1.2...v1.1.3)
